@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Expense Tracker</h1>
+
+      <div class="summary">
+        <div>
+          <h3>Balance</h3>
+          <p id="balance">KSh 0</p>
+        </div>
+
+        <div>
+          <h3>Income</h3>
+          <p id="income">KSh 0</p>
+        </div>
+
+        <div>
+          <h3>Expenses</h3>
+          <p id="expenses">KSh 0</p>
+        </div>
+      </div>
+
+      <h2>Add Transaction</h2>
+
+      <form id="transactionForm">
+        <input
+          type="text"
+          id="description"
+          placeholder="Description"
+          required
+        />
+
+        <input
+          type="number"
+          id="amount"
+          placeholder="Amount"
+          min="0.01"
+          step="0.01"
+          required
+        />
+
+        <select id="type" required>
+          <option value="expense">Expense</option>
+          <option value="income">Income</option>
+        </select>
+
+        <select id="category" required>
+          <option value="Food">Food</option>
+          <option value="Transport">Transport</option>
+          <option value="Bills">Bills</option>
+          <option value="Shopping">Shopping</option>
+          <option value="Salary">Salary</option>
+          <option value="Other">Other</option>
+        </select>
+
+        <button type="submit">Add Transaction</button>
+      </form>
+
+      <h2>Transactions</h2>
+
+      <div id="transactionList"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
