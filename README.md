@@ -129,4 +129,4 @@ Building this project helped me practice:
 
 - [Portfolio](https://2728-ane.github.io/my-portfolio/)
 - [GitHub](https://github.com/2728-ane)
-- [LinkedIn](https://www.linkedin.com/in/ane-tabitha-20bb50407)
+- [LinkedIn]( https://www.linkedin.com/in/ane-tabitha-651003442/)
